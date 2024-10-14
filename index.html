@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News planet Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="css/planet.png">
+    <script defer="defer" src="script.js"></script>
+</head>
+<body>
+        <div class="background">
+            <video loop muted autoplay poster="css/videoframe_4417.png">
+                <source src="css/cybercity.mp4">
+            </video>
+            <div class="signup">
+                <div class="intro">
+                    <div>Welcome to the News</div> 
+                    <img src="css/planet.png"> 
+                    <div style="color:#FDBF20">Planet</div>
+                </div>
+                <div class="description">The latest and biggest game news, rumors and previews</div>
+                <form action="redirect.html" method="post">
+                    <div class="infos">
+                        <fieldset>
+                            <label for="first_name">FIRST NAME <span>*</span> </label>
+                            <input type="text" id="first_name" name="First Name" placeholder="Chosen" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="last_name">LAST NAME <span>*</span></label>
+                            <input type="text" id="last_name" name="Last Name" placeholder="Goose" required>
+                        </fieldset>
+                    </div>
+                    <div class="infos">
+                        <fieldset>
+                            <label for="email">EMAIL ADDRESS <span>*</span></label>
+                            <input type="email" id="email" name="Email" placeholder="xyz@example.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" oninvalid="this.setCustomValidity('')" onchange="this.setCustomValidity('')" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="phone">PHONE NUMBER <span style="color:white">(Optional)</span></label>
+                            <input type="tel" id="phone" name="Phone Number">
+                        </fieldset>
+                    </div>
+                    <div class="infos">
+                        <fieldset>
+                            <label for="password">PASSWORD <span>*</span></label>
+                            <div class="pass_field">
+                                <img src="css/hide_pass.png" id="password_icon">
+                                <input type="password" id="password" name="Password" style="margin-bottom:10px;" required maxlength="30" minlength="10">
+                            </div>
+                            <div class="requirements">
+                                <div class="rules"><img src="css/cancel.png" id="length_req"><p>Atleast 10 characters long</p></div>
+                                <div class="rules"><img src="css/cancel.png" id="special_req"><p>Must contain Special characters</p></div>
+                                <div class="rules"><img src="css/cancel.png" id="number_req"><p>Must contain numbers</p></div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label for="confirm">CONFIRM PASSWORD <span>*</span></label>
+                            <div class="pass_field">
+                                <img src="css/hide_pass.png" id="confirm_icon">
+                                <input class="confirm" type="password" id="confirm" name="Confirm Password" required >
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox"  required>
+                        <div>I agree to the <a href="redirect.html" target="_blank">terms</a></div>
+                    </div>
+                    <button type="submit" class="submit">Sign Up</button>
+                    <div class="login">Already have an account ? <a href="redirect.html" target="_blank">Log In</a></div>
+                </form>
+                <div class="footer"><a href="https://github.com/The-Chosen-Goose" target="_blank">Made by The-Chosen-Goose</a></div>
+            </div>
+        </div>
+        
+</body>
+</html>
